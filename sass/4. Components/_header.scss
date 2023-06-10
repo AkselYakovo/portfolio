@@ -1,0 +1,152 @@
+@use "../2. Tools/variables" as *;
+
+header {
+    display: flex;
+
+    width: 100%;
+    height: 100px;
+    padding-left: 30px;
+    padding-right: 10px;
+
+    background-color: white;
+
+    box-sizing: border-box;
+    user-select: none;
+
+    h1 {
+        display: flex;
+        align-items: center;
+        
+        font-family: 'Quicksand', sans-serif;
+        font-weight: normal;
+        font-size: 2rem;
+        font-weight: 300;
+
+        letter-spacing: -0.02em;
+
+        margin-right: auto;
+
+        color: black;
+        cursor: pointer;
+
+        span {
+            color: $jake-blue;
+        }
+    }
+}
+
+
+header nav {
+    height: 100%;
+
+    ul {
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        li {
+            height: 100%; 
+
+            font-family: 'Rubik', Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            font-size: 1.5rem;
+
+            letter-spacing: -0.02em;
+
+            color: $bk;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: 100%;
+                height: 100%;
+                padding: 0 10px;
+        
+                font-family: inherit;
+
+                text-decoration: none;
+
+                color: inherit;
+                
+                box-sizing: border-box;
+
+                // &:link {}
+
+                // &:visited {}
+
+                &:hover {
+                    background-color: #f2f2f2;
+                }
+
+                &:active {
+                    color: $jake-blue;
+                }
+
+                &:focus {
+                    outline-color: $jake-blue;
+                    outline-offset: 2px;
+                    outline-width: 2px;
+                }
+
+            }
+
+            a.active {
+                background: linear-gradient(180deg, #F2F1F1 0%, #FFFFFF 100%);
+                color: $jake-blue;
+
+                // &:link {}
+
+                // &:visited {}
+
+                &:hover {
+                    background-color: #f2f2f2;
+                }
+
+                &:active {
+                    color: $jake-blue;
+                }
+            }
+        }
+    }
+}
+
+header.header--dark-theme {
+    background-color: $bk;
+
+    h1 { color: $ivory; }
+
+    nav ul li a { 
+        color: $ivory;
+
+        // &:link {}
+
+        // &:visited {}
+
+        &:hover {
+            background-color: #1F1F1F;
+        }
+
+        &:active {
+            color: $jake-blue;
+        }
+     }
+
+    nav ul li a.active {
+        color: $jake-blue;
+        background: linear-gradient(179.77deg, rgba(37, 37, 38, 0.5) 0.2%, rgba(13, 14, 14, 0.58) 99.8%);
+
+        // &:link {}
+
+        // &:visited {}
+
+        &:hover {
+            background-color: #141414;
+        }
+
+        &:active {
+            color: $jake-blue;
+        }
+    }
+}
