@@ -79,7 +79,7 @@ main > section h2 {
   text-align: center;
 }
 
-header {
+body > header {
   display: flex;
   width: 100%;
   height: 100px;
@@ -89,7 +89,7 @@ header {
   box-sizing: border-box;
   user-select: none;
 }
-header h1 {
+body > header h1 {
   display: flex;
   align-items: center;
   font-family: "Quicksand", sans-serif;
@@ -101,19 +101,19 @@ header h1 {
   color: black;
   cursor: pointer;
 }
-header h1 span {
+body > header h1 span {
   color: #0F6DFB;
 }
 
-header nav {
+body > header nav {
   height: 100%;
 }
-header nav ul {
+body > header nav ul {
   display: flex;
   width: 100%;
   height: 100%;
 }
-header nav ul li {
+body > header nav ul li {
   height: 100%;
   font-family: "Rubik", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -121,7 +121,7 @@ header nav ul li {
   letter-spacing: -0.02em;
   color: #070707;
 }
-header nav ul li a {
+body > header nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,51 +133,51 @@ header nav ul li a {
   color: inherit;
   box-sizing: border-box;
 }
-header nav ul li a:hover {
+body > header nav ul li a:hover {
   background-color: #f2f2f2;
 }
-header nav ul li a:active {
+body > header nav ul li a:active {
   color: #0F6DFB;
 }
-header nav ul li a:focus {
+body > header nav ul li a:focus {
   outline-color: #0F6DFB;
   outline-offset: 2px;
   outline-width: 2px;
 }
-header nav ul li a.active {
+body > header nav ul li a.active {
   background: linear-gradient(180deg, #F2F1F1 0%, #FFFFFF 100%);
   color: #0F6DFB;
 }
-header nav ul li a.active:hover {
+body > header nav ul li a.active:hover {
   background-color: #f2f2f2;
 }
-header nav ul li a.active:active {
+body > header nav ul li a.active:active {
   color: #0F6DFB;
 }
 
-header.header--dark-theme {
+body > header.header--dark-theme {
   background-color: #070707;
 }
-header.header--dark-theme h1 {
+body > header.header--dark-theme h1 {
   color: #F2F1F1;
 }
-header.header--dark-theme nav ul li a {
+body > header.header--dark-theme nav ul li a {
   color: #F2F1F1;
 }
-header.header--dark-theme nav ul li a:hover {
+body > header.header--dark-theme nav ul li a:hover {
   background-color: #1F1F1F;
 }
-header.header--dark-theme nav ul li a:active {
+body > header.header--dark-theme nav ul li a:active {
   color: #0F6DFB;
 }
-header.header--dark-theme nav ul li a.active {
+body > header.header--dark-theme nav ul li a.active {
   color: #0F6DFB;
   background: linear-gradient(179.77deg, rgba(37, 37, 38, 0.5) 0.2%, rgba(13, 14, 14, 0.58) 99.8%);
 }
-header.header--dark-theme nav ul li a.active:hover {
+body > header.header--dark-theme nav ul li a.active:hover {
   background-color: #141414;
 }
-header.header--dark-theme nav ul li a.active:active {
+body > header.header--dark-theme nav ul li a.active:active {
   color: #0F6DFB;
 }
 
