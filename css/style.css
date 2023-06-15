@@ -181,4 +181,76 @@ body > header.header--dark-theme nav ul li a.active:active {
   color: #0F6DFB;
 }
 
+.introduction {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  align-items: center;
+}
+.introduction > p {
+  max-width: 40%;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  line-height: 160%;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.introduction button {
+  margin-top: 0;
+}
+
+.introduction header {
+  position: relative;
+}
+.introduction header figure {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 75px auto;
+  border: 3px solid black;
+  background-color: cadetblue;
+  border-radius: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.introduction header figure img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  object-fit: cover;
+}
+.introduction header figure::after {
+  content: "THIS IS ME!";
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  font-family: "Rubik", monospace;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 160%;
+  border-radius: 8px;
+  transform: translateX(-50%) translateY(220px);
+  background-color: #070707;
+  color: #F2F1F1;
+}
+.introduction header svg {
+  display: none;
+}
+.introduction header .title {
+  margin-bottom: 0.4375em;
+}
+.introduction header .tagline {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.25rem;
+}
+
 /*# sourceMappingURL=style.css.map */
