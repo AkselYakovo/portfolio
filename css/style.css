@@ -181,6 +181,35 @@ body > header.header--dark-theme nav ul li a.active:active {
   color: #0F6DFB;
 }
 
+button {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 160%;
+  background-color: transparent;
+  margin-top: 1.25em;
+  margin-right: 1em;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+  padding: 8px 24px;
+  border: 0;
+  cursor: pointer;
+}
+button:focus {
+  outline: solid 2px #0F6DFB;
+  background-color: #f2f2f2;
+}
+button:hover {
+  background-color: #f2f2f2;
+}
+button:active {
+  background-color: #E5E5E5;
+}
+
+button.action {
+  color: #0F6DFB;
+}
+
 .introduction {
   display: flex;
   flex-direction: column;

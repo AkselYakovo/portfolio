@@ -1,0 +1,37 @@
+@use '../2.\ Tools/variables' as *;
+
+button {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+
+    text-transform: uppercase;
+    line-height: 160%;
+    background-color: transparent;
+
+    margin-top: 1.25em;
+    margin-right: 1em; 
+    margin-bottom: 1.5em;
+    margin-left: 1em; 
+    padding: 8px 24px;
+    border: 0;
+
+    cursor: pointer;
+
+    &:focus {
+        outline:solid 2px $jake-blue;
+        background-color: #f2f2f2;
+    }
+
+    &:hover {
+        background-color: #f2f2f2;
+    }
+
+    &:active {
+        background-color: #E5E5E5;
+    }
+
+}
+
+button.action {
+    color: $jake-blue;
+}
