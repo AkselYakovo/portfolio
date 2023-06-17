@@ -1,6 +1,6 @@
 @use "../2. Tools/variables" as *;
 
-header {
+body > header {
     display: flex;
 
     width: 100%;
@@ -36,7 +36,7 @@ header {
 }
 
 
-header nav {
+body > header nav {
     height: 100%;
 
     ul {
@@ -112,7 +112,7 @@ header nav {
     }
 }
 
-header.header--dark-theme {
+body > header.header--dark-theme {
     background-color: $bk;
 
     h1 { color: $ivory; }
