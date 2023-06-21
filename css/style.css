@@ -282,4 +282,20 @@ button.action {
   margin-bottom: 2.25rem;
 }
 
+.skills {
+  height: 125vh;
+  padding-top: 5rem;
+  padding-bottom: 7.5rem;
+  background-color: #070707;
+  color: #F2F1F1;
+}
+
+.skills header h2 {
+  color: inherit;
+}
+
+.skills .container {
+  position: relative;
+}
+
 /*# sourceMappingURL=style.css.map */

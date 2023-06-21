@@ -1,0 +1,18 @@
+@use '../2.\ Tools/_variables' as *;
+
+.skills {
+    height: 125vh;
+    padding-top: 5rem;
+    padding-bottom: 7.5rem;
+
+    background-color: $bk;
+    color: $ivory;
+}
+
+.skills header h2 {
+    color: inherit;
+}
+
+.skills .container {
+    position: relative;
+}
