@@ -29,10 +29,22 @@
         img { 
             width: 65%;
             height: 65%;
+            user-select: none;
+        }
+
+        &:focus + .content {
+            animation-name: 'show_skill_content';
+            animation-duration: 250ms;
+            animation-timing-function: ease;
+            visibility: visible;
+            opacity: 1;
+            z-index: 1;
         }
     }
 
     .content {
+        visibility: hidden;
+
         position: absolute;
         top: 50%;
         right: calc( 
@@ -51,9 +63,11 @@
         font-family: 'Quicksand';
 
         line-height: 160%;
+
         transform: translateY(-50%);
         box-sizing: border-box;
         box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, .4);
+        opacity: 0;
 
         .title {
             font-size: 1.25em;
@@ -143,9 +157,4 @@
             transform: translateY(-50%) rotate(180deg);
         }
     }
-}
-
-.skill:nth-child(2) {
-    top: 200px;
-    left: 500px;
 }
