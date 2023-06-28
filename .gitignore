@@ -1,2 +1,8 @@
 # Ignore Map CSS files
 css/*.css.map
+# NPM Section
+node_modules
+package.json
+package-lock.json
+# Ignore local server bootstrap
+app.js

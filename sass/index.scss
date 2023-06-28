@@ -1,11 +1,14 @@
 @use '1.\ Vendors/reset';
 
 @use '2.\ Tools/fonts';
+@use '2.\ Tools/animations';
 
 @use '3.\ General\ Use/main';
 @use '3.\ General\ Use/section';
 
 @use '4.\ Components/header';
 @use '4.\ Components/button';
+@use '4.\ Components/skill';
 
 @use '5.\ Sections/introduction';
+@use '5.\ Sections/skills';
