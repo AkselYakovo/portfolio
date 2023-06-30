@@ -450,4 +450,50 @@ button.link {
   height: 80vh;
 }
 
+.portfolio {
+  padding-top: 75px;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.portfolio header {
+  margin-bottom: 32px;
+}
+.portfolio header h2.title {
+  margin-bottom: 0;
+}
+.portfolio .controls {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+.portfolio .controls .control {
+  width: 12px;
+  height: 12px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 100%;
+  background-color: #070707;
+  box-shadow: 0 0 0 0 #0F6DFB;
+  cursor: pointer;
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
+  transition-property: background-color, box-shadow, border-color;
+}
+.portfolio .controls .control.active {
+  border-color: white;
+  background-color: #0F6DFB;
+  box-shadow: 0 0 0 2px #0F6DFB;
+}
+
+.websites-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=style.css.map */
