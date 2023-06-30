@@ -236,6 +236,14 @@ button.action {
   color: #0F6DFB;
 }
 
+button.link {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+}
+
 .skill {
   --content-width: 250px;
   --nudge: 8px;
