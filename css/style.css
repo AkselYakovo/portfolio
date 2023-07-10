@@ -629,4 +629,21 @@ a.link:active svg path {
   overflow: hidden;
 }
 
+section.contact {
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  background-color: #070707;
+  color: #F2F1F1;
+}
+
+section.contact header .title {
+  margin-bottom: 0.5em;
+}
+
+section.contact .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /*# sourceMappingURL=style.css.map */
