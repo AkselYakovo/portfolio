@@ -1,0 +1,61 @@
+@use '../2.\ Tools/variables' as *;
+
+.portfolio {
+    padding-top: 75px;
+    padding-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
+
+    header {
+        margin-bottom: 32px;
+
+        h2.title {
+            margin-bottom: 0;
+        }
+    }
+
+    .controls {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+
+        margin-bottom: 48px;
+
+        .control {
+            width: 12px;
+            height: 12px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: transparent;
+            
+            border-radius: 100%;
+            background-color: $bk;
+            box-shadow: 0 0 0 0 $jake-blue;
+
+            cursor: pointer;
+            transition-duration: 100ms;
+            transition-timing-function: ease-out;
+            transition-property:background-color,
+                                box-shadow,
+                                border-color;
+        }
+
+        .control.active {
+            border-color: white;
+            
+            background-color: $jake-blue;
+
+            box-shadow: 0 0 0 2px $jake-blue;
+        }
+    }
+}
+
+.websites-container {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 50px;
+
+    position: relative;
+    overflow: hidden;
+}

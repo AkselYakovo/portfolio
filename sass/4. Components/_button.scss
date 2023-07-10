@@ -35,3 +35,12 @@ button {
 button.action {
     color: $jake-blue;
 }
+
+button.link {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0;
+    border: 1px solid #ccc;
+
+    border-radius: 100%;
+}
