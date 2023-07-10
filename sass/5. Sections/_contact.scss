@@ -1,0 +1,21 @@
+@use '../2.\ Tools/variables' as *;
+
+section.contact {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+
+    background-color: $bk;
+
+    color: $ivory;
+}
+
+section.contact header .title {
+    margin-bottom: .5em;
+}
+
+section.contact .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+

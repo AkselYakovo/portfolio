@@ -454,6 +454,46 @@ button.link {
   transform: translateX(200%);
 }
 
+a.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 100ms linear;
+}
+a.link svg {
+  width: 125px;
+  height: 125px;
+  margin-bottom: 8px;
+  transition: transform 200ms ease;
+}
+a.link svg path {
+  fill: #F2F1F1;
+  transition: fill 100ms linear;
+}
+a.link h3 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  line-height: 160%;
+  color: #F2F1F1;
+}
+a.link:hover {
+  background-color: #131313;
+  opacity: 1;
+}
+a.link:hover svg {
+  transform: translateY(-8px);
+}
+a.link:active h3 {
+  color: #0F6DFB;
+}
+a.link:active svg path {
+  fill: #0F6DFB;
+}
+
 .introduction {
   display: flex;
   flex-direction: column;
@@ -587,6 +627,23 @@ button.link {
   padding-bottom: 50px;
   position: relative;
   overflow: hidden;
+}
+
+section.contact {
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  background-color: #070707;
+  color: #F2F1F1;
+}
+
+section.contact header .title {
+  margin-bottom: 0.5em;
+}
+
+section.contact .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,54 @@
+@use '../2.\ Tools/variables' as *;
+
+a.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 600px;
+
+    text-decoration: none;
+
+    opacity: 0.8;
+
+    transition: opacity 100ms linear;
+
+    svg {
+        width: 125px;
+        height: 125px;
+        margin-bottom: 8px;
+
+        transition: transform 200ms ease;
+
+        path {
+            fill: $ivory;
+
+            transition: fill 100ms linear;
+        }
+    }
+
+    h3 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.5rem;
+        
+        line-height: 160%;
+
+        color: $ivory;
+    }
+
+    &:hover {
+        background-color: #131313;
+
+        opacity: 1;
+
+        svg {
+            transform: translateY(-8px);
+        }
+    }
+
+    &:active {
+        h3 { color: $jake-blue; }
+        svg path { fill: $jake-blue; }
+    }
+}
